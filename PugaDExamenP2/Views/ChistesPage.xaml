@@ -5,8 +5,19 @@
              Title="ChistesPage">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Aquí te tengo un chiste"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <AbsoluteLayout>
+            <Button x:Name="nuevoChisteButton"
+            Text="Otro Chiste"
+            HorizontalOptions="Center"
+            VerticalOptions="End"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            AbsoluteLayout.LayoutBounds="0.5, 1, AutoSize, AutoSize"
+            Clicked="nuevoChisteButton_Clicked"/>
+        </AbsoluteLayout>
     </VerticalStackLayout>
 </ContentPage>
+
+
