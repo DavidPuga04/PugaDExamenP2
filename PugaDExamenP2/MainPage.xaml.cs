@@ -1,4 +1,7 @@
-﻿namespace PugaDExamenP2
+﻿using Microsoft.Maui.Controls;
+using System.Threading.Tasks;
+
+namespace PugaDExamenP2
 {
     public partial class MainPage : ContentPage
     {
@@ -9,16 +12,18 @@
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+
+
+
+        private async void ChisteBtn_Clicked(object sender, EventArgs e)
         {
-            count++;
+            await Navigation.PushAsync(new ());
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
+        }
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
+        private async void Informacion_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ());
         }
     }
 
