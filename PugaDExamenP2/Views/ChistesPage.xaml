@@ -18,7 +18,7 @@
         <Button Text="Otro chiste"
                BackgroundColor="#6200EE"
                TextColor="White"
-               Clicked="OnOtroChisteClicked"
+               Clicked="OtroChisteClicked"
                CornerRadius="10"
                AbsoluteLayout.LayoutBounds="0.5, 1, 1, 50"
                AbsoluteLayout.LayoutFlags="WidthProportional, PositionProportional" />

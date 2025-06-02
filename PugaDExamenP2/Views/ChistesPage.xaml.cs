@@ -31,7 +31,7 @@ public partial class ChistesPage : ContentPage
         }
     }
 
-    private void OnOtroChisteClicked(object sender, EventArgs e)
+    private void OtroChisteClicked(object sender, EventArgs e)
     {
         CargarChiste();
     }
