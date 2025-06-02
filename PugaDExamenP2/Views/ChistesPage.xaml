@@ -2,22 +2,31 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PugaDExamenP2.Views.ChistesPage"
-             Title="ChistesPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Aquí te tengo un chiste"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        <AbsoluteLayout>
-            <Button x:Name="nuevoChisteButton"
-            Text="Otro Chiste"
-            HorizontalOptions="Center"
-            VerticalOptions="End"
-            AbsoluteLayout.LayoutFlags="PositionProportional"
-            AbsoluteLayout.LayoutBounds="0.5, 1, AutoSize, AutoSize"
-            Clicked="nuevoChisteButton_Clicked"/>
-        </AbsoluteLayout>
-    </VerticalStackLayout>
+             Title="Chistes">
+    <AbsoluteLayout>
+
+        <Label x:Name="chisteLabel"
+              Text="Cargando chiste..."
+              FontSize="20"
+              HorizontalOptions="Center"
+              VerticalOptions="Center"
+              HorizontalTextAlignment="Center"
+              VerticalTextAlignment="Center"
+              AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.9, AutoSize"
+              AbsoluteLayout.LayoutFlags="All" />
+
+        <Button Text="Otro chiste"
+               BackgroundColor="#6200EE"
+               TextColor="White"
+               Clicked="OnOtroChisteClicked"
+               CornerRadius="10"
+               AbsoluteLayout.LayoutBounds="0.5, 1, 1, 50"
+               AbsoluteLayout.LayoutFlags="WidthProportional, PositionProportional" />
+
+    </AbsoluteLayout>
+
+
 </ContentPage>
 
 
+    
