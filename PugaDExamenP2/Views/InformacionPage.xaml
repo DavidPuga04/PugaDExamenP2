@@ -4,9 +4,47 @@
              x:Class="PugaDExamenP2.Views.InformacionPage"
              Title="InformacionPage">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+
+        <Grid Padding="20"
+      RowSpacing="20"
+      ColumnSpacing="20"
+      RowDefinitions="Auto, Auto"
+      ColumnDefinitions="*, *">
+
+
+            <Frame BorderColor="Gray" CornerRadius="10" Padding="10">
+                <VerticalStackLayout>
+                    <Label Text="Nombre:" FontAttributes="Bold"/>
+                    <Label Text="David Puga"/>
+                </VerticalStackLayout>
+            </Frame>
+
+
+            <Frame Grid.Column="1" BorderColor="Gray" CornerRadius="10" Padding="10">
+                <VerticalStackLayout>
+                    <Label Text="Fecha:" FontAttributes="Bold"/>
+                    <Label Text="03/12/2004"/>
+                </VerticalStackLayout>
+            </Frame>
+
+
+            <Frame Grid.Row="1" BorderColor="Gray" CornerRadius="10" Padding="10">
+                <VerticalStackLayout>
+                    <Label Text="Intereses:" FontAttributes="Bold"/>
+                    <Label Text="Jugar videojuegos, Escuchar música, Ver películas"/>
+                </VerticalStackLayout>
+            </Frame>
+
+
+            <Frame Grid.Row="1" Grid.Column="1" BorderColor="Gray" CornerRadius="10" Padding="10">
+                <VerticalStackLayout>
+                    <Label Text="Versión:" FontAttributes="Bold"/>
+                    <Label Text="1.0"/>
+                </VerticalStackLayout>
+            </Frame>
+
+        </Grid>
     </VerticalStackLayout>
 </ContentPage>
+
+
